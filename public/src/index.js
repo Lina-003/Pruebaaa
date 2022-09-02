@@ -6,7 +6,7 @@ console.log(data);
 class AppContainer extends HTMLElement {
   constructor() {
     super();
-    this.attachShadow({ mode: 'open' }); // encapsulation, mode open means this is reachable for js on your web
+    this.attachShadow({ mode: 'open' });
   }
 
   connectedCallback() {

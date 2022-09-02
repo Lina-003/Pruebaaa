@@ -1,5 +1,4 @@
 class MyProfile extends HTMLElement {
-    // this is how you declare which props are you interested in
     static get observedAttributes() {
       return ['logo', 'uuid', 'name', 'age', 'miles', 'per1', 'per2', 'per3'];
     }

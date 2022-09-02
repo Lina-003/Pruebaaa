@@ -1,5 +1,4 @@
 class MyCounter extends HTMLElement {
-    // this is how you declare which props are you interested in
     static get observedAttributes() {
       return ["count"];
     }
@@ -10,7 +9,6 @@ class MyCounter extends HTMLElement {
       this.mount();
     }
   
-    // this is the method is triggered when the component is added to the document
     connectedCallback() {
       console.log("mounted");
       this.mount();
@@ -40,7 +38,6 @@ class MyCounter extends HTMLElement {
   
     render() {
       console.log("render");
-      // adding external styles to the component
       this.shadowRoot.innerHTML = `
           <section1>
             ${this.count || 1}
